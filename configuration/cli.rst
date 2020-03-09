@@ -63,3 +63,4 @@ Configuration overview of the command line interface.
   * ``rx-pkts`` - received packets
   * ``tx-pkts`` - transmitted packets
   * ``netns`` - network namespace name
+  * ``ipoe-type`` - IPoE session type (UP/DHCP)
