@@ -34,6 +34,11 @@
 
   Specifies interval in seconds to send accounting information (may be overriden by radius *Acct-Interim-Interval* attribute)
 
+**acct-interim-jitter=n**
+  By dafault is not defined.
+  
+  Specifies absolute maximum jitter value in seconds to be applied to accounting information interval. Calculate interim-interval+-acct-interim-jitter.
+
 **max-try=n**
   By default is ``max-try=3``
 
