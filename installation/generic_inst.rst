@@ -23,7 +23,7 @@ Download accel-ppp source code with git client, tree master . Master tree contai
 
 .. code-block:: sh
 
-  git clone https://github.com/xebd/accel-ppp.git accel-ppp-code
+  git clone https://github.com/accel-ppp/accel-ppp.git accel-ppp-code
 
 Create directory for build source code and go to this directory. 
 
