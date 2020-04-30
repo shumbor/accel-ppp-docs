@@ -93,7 +93,12 @@ Section IPoE contain many flexible customization.
 **renew-time=n**
     By default ``renew-time`` calculate as lease-time/2.
 
-    Specifies lease renew time (option 58) in seconds to be sent to DHCP client.
+    Specifies lease renew time (option 58) in seconds to be sent to DHCP client. Might be overwritten by RADIUS attribute DHCP-Renewal-Time.
+
+**rebind-time=n**
+    By default ``rebind-time`` calculate as lease-time/2+lease-time/4+lease-time/8.
+
+    Specifies lease rebind time (option 59) in seconds to be sent to DHCP client. Might be overwritten by RADIUS attribute DHCP-Rebinding-Time.
 
 **shared=0|1**
     By default is active ``shared=1``
