@@ -30,7 +30,7 @@ Contains common params for all connection types
 **max-sessions=n**
   By default is disabled ``max-sessions=0``
   
-  Specifies maximum sessions which server may processed 
+  Specifies maximum sessions which server may processed. After reaching ``max-sessions`` accel-ppp will ignore connection tries for new sessions.
  
 **check-ip=0|1**
   By default is: ``check-ip=0``
