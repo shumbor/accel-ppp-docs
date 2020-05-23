@@ -33,7 +33,12 @@ Contains common params for all connection types
   Specifies maximum sessions which server may processed. After reaching ``max-sessions`` accel-ppp will ignore connection tries for new sessions.
  
 **check-ip=0|1**
-  By default is: ``check-ip=0``
+  y default is: ``check-ip=0``
 
   Specifies whether accel-ppp should check if IP already assigned to other ppp or ipoe interface.
+  
+**netns-run-dir=/path/to/netns**
+  By default: ``netns-run-dir=/var/run/netns``
+  
+  Specifies path where accel-ppp should find netns objects
   
