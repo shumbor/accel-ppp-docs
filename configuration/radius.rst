@@ -2,8 +2,14 @@
 ======
 
 **verbose=0|1**
+  By dafault is not defined.
+
+  If this option enabled, the radius module should add detailed info to log
 
 **interim-verbose=0|1**
+  By dafault is not defined.
+  
+  Specified, should radius module produce verbose logging of interim radius packets.
 
 **dictionary=/path/to/dictionary**
 
