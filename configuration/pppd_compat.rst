@@ -11,7 +11,7 @@ Config overview
 
   If specified and greated then 0, pppd_module will produce verbose logging.
 
-**radattr=prefix**
+**radattr-prefix=/path**
   By default is not defined.
 
   Specifies prefix of radattr files (for example ``radattr=/var/run/radattr``, resulting files will be ``/var/run/radattr.pppX``)
