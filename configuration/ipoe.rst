@@ -319,7 +319,7 @@ Section IPoE contain many flexible customization.
 
 .. code-block:: sh
 
-     offer-delay=0,100:1000,200:2500,300:5000,400:10000,-1
+     offer-delay=0,100:1000,200:2500,300:5000,400:9999,-1:10000
 
 .. admonition:: Explain:
 
