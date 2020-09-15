@@ -1,7 +1,7 @@
 Control features
 ================
 
-Accel-ppp suppoort next features for control daemon and sessions:
+Accel-ppp support next features for control daemon and sessions:
 
 	* ``accel-cmd``
 
@@ -90,6 +90,8 @@ telnet
 
 radius CoA
 ^^^^^^^^^^
+
+Example, terminate session by username: ``echo User-Name=username | radclient -x 127.0.0.1:3799 disconnect testing123``.
 
 snmp
 ^^^^
