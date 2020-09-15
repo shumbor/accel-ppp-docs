@@ -2,12 +2,12 @@
 ======
 
 **verbose=0|1**
-  By dafault is not defined.
+  By default is not defined.
 
   If this option enabled, the radius module should add detailed info to log
 
 **interim-verbose=0|1**
-  By dafault is not defined.
+  By default is not defined.
   
   Specified, should radius module produce verbose logging of interim radius packets.
 
@@ -19,29 +19,29 @@
   Specifies IP address, secret, ports of RADIUS server.
 
 **nas-ip-address=x.x.x.x**
-  By dafault is not defined.
+  By default is not defined.
 
   Specifies value to send to RADIUS server in *NAS-IP-Address* attribute and to be matched in DM/CoA requests. Also DM/CoA server will bind to that address.
 
 **nas-identifier=identifier**
-  By dafault is not defined.
+  By default is not defined.
 
   Specifies value to send to RADIUS server in NAS-Identifier attribute and to be matched in DM/CoA requests.
 
 **gw-ip-address=x.x.x.x**
-  By dafault is not defined.
+  By default is not defined.
 
   Specifies address to use as local address of ppp interfaces if *Framed-IP-Address* received from RADIUS server.
 
 **bind=x.x.x.x**
 
 **acct-interim-interval=n**
-  By dafault is not defined.
+  By default is not defined.
 
   Specifies interval in seconds to send accounting information (may be overriden by radius *Acct-Interim-Interval* attribute)
 
 **acct-interim-jitter=n**
-  By dafault is not defined.
+  By default is not defined.
   
   Specifies absolute maximum jitter value in seconds to be applied to accounting information interval. Calculate interim-interval+-acct-interim-jitter.
 
