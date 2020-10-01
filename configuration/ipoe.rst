@@ -119,6 +119,16 @@ Section IPoE contain many flexible customization.
     
     For use ippool need add this module to ``[modules]`` section, and sets params on section ``[ip-pool]``
 
+**ipv6-pool=pool_name**
+    By default is not defined.
+
+    Specifies ipv6 pool name which accel-ppp will use for allocate client ipv6 prefix.
+
+**ipv6-pool-delegate=pool_name**
+    By default is not defined.
+
+    Specifies ipv6 prefix delegation pool name which accel-ppp will use for allocate client ipv6 prefix delegation.
+
 **vlan-mon=[re:]name[,filter]**
     vlan-mon needs for automatiicaly crate vlans interfaces, more often on vlan-per-user schemas. Support regular expression (**re:**). Parameter specifies list of vlans or ranges of vlans to monitor for and may be in following form: vlan-mon=eth1,2,5,10,20-30
     

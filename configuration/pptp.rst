@@ -60,3 +60,13 @@ Configuration overview of PPTP module.
 .. admonition:: Note:
     
     For use ippool need add this module to ``[modules]`` section, and sets params on section ``[ip-pool]``
+
+**ipv6-pool=pool_name**
+  By default is not defined.
+
+  Specifies ipv6 pool name which accel-ppp will use for allocate client ipv6 prefix.
+
+**ipv6-pool-delegate=pool_name**
+  By default is not defined.
+
+  Specifies ipv6 prefix delegation pool name which accel-ppp will use for allocate client ipv6 prefix delegation.

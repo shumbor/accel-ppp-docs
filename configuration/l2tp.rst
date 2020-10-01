@@ -108,3 +108,22 @@ Overview configuration of L2TP module.
 **avp_permissive=0|1**
 
 **dir300_quirk=0|1**
+
+**ip-pool=pool_name**
+  By default is not defined.
+
+  Specifies ip pool name which accel-ppp will use for allocate client ip address.
+
+.. admonition:: Note:
+
+    For use ippool need add this module to ``[modules]`` section, and sets params on section ``[ip-pool]``
+
+**ipv6-pool=pool_name**
+  By default is not defined.
+
+  Specifies ipv6 pool name which accel-ppp will use for allocate client ipv6 prefix.
+
+**ipv6-pool-delegate=pool_name**
+  By default is not defined.
+
+  Specifies ipv6 prefix delegation pool name which accel-ppp will use for allocate client ipv6 prefix delegation.
