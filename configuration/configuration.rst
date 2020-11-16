@@ -31,6 +31,7 @@ Configuration file consists of sections in form:
     pptp.rst
     l2tp.rst
     ipoe.rst
+    ip-pool.rst
     sstp.rst
     dns.rst
     ipv6-dns.rst
