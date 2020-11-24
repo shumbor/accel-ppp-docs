@@ -37,7 +37,19 @@ Object **pkt** has next functions:
 
 **ipaddr()**
   Will return client ip address exist in packet header.
-  
+
+**hwaddr()**
+  Will return client MAC address.
+
+**vlan()**
+  Will return client VLAN.
+
+.. code-block:: sh
+
+  local vlan = pkt:vlan()
+  local svid = bit.rshift(vlan,16)
+  local cvid = bit.band(vlan,0xffff)
+
 **options()**
   Will return table which contains number of DHCP option in received packet.
 
