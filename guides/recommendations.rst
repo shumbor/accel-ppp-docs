@@ -24,8 +24,8 @@ As example:
 .. code-block:: sh
 
   MTU
-             1514
-               |   1514
+             1504
+               |   1504
                |   |   1500
                |   |   |
             eth0.2001.101
@@ -38,8 +38,8 @@ Set up MTU on interface eth0 and interface with S-VLAN
 
 .. code-block:: sh
 
-  ip link set eth0 mtu 1514
-  ip link set eth0.2001 mtu 1514
+  ip link set eth0 mtu 1504
+  ip link set eth0.2001 mtu 1504
 
 .. admonition:: Note:
 
