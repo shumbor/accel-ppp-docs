@@ -72,7 +72,7 @@ Section ``[ppp]`` consist common ppp prams for PPPoE/PPtP/L2TP/SSTP.
  .. admonition:: Note:
     
     RADIUS may override this option by MS-MPPE-Encryption-Policy attribute.
-    mppe requires ccp=1
+    MPPE requires defined ``ccp=1``
   
 **ipv4=deny|allow|prefer|require**
   By default is ``ipv4=allow``
