@@ -18,7 +18,7 @@ Common available commands for ``accel-cmd`` and ``telnet``. Also possible show t
 	show stat - shows various statistics information
 	terminate if <interface> [soft|hard]- terminate session by interface name
 		[match] username <username> [soft|hard]- terminate session by username
-		ip <addresss> [soft|hard]- terminate session by ip address
+		ip <address> [soft|hard]- terminate session by ip address
 		csid <id> [soft|hard]- terminate session by calling station id
 		sid <id> [soft|hard]- terminate session by session id
 		all [soft|hard]- terminate all sessions
@@ -47,7 +47,7 @@ Common available commands for ``accel-cmd`` and ``telnet``. Also possible show t
 			calling-sid - calling station id
 			called-sid - called station id
 			sid - session id
-			comp - compression/ecnryption method
+			comp - compression/encryption method
 			rx-bytes - received bytes (human readable)
 			tx-bytes - transmitted bytes (human readable)
 			rx-bytes-raw - received bytes

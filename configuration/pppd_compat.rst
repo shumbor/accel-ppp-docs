@@ -1,7 +1,7 @@
 [pppd-compat]
 =============
 
-Configuration of pppd_compat module. Often used for creation custom shaper or other custom triks.
+Configuration of pppd_compat module. Often used for creation custom shaper or other custom tricks.
 This module starts pppd compatible ip-up/ip-down scripts and ip-change to handle RADIUS CoA request.
 
 Config overview
@@ -24,7 +24,7 @@ Config overview
 **ip-up=/path/to/file**
   By default is not defined.
 
-  Path to ip-up script which is executed when ppp interfaces is completly configured and started.
+  Path to ip-up script which is executed when ppp interfaces is completely configured and started.
 
 **ip-down=/path/to/file**
   By default is not defined.

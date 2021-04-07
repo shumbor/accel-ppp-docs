@@ -23,7 +23,7 @@ Section ``[ppp]`` consist common ppp prams for PPPoE/PPtP/L2TP/SSTP.
 **mru=n**
   By default is not defined.
 
-  Prefered MRU.
+  Preferred MRU.
 
 **accomp=allow|deny**
   By default is: ``accomp=deny``
@@ -139,7 +139,7 @@ Section ``[ppp]`` consist common ppp prams for PPPoE/PPtP/L2TP/SSTP.
 **unit-cache=n**
   By default is disabled: ``unit-cache=0``
 
-  Specifies number of interfaces to keep in cache. It means that don't destory interface after corresponding session is destoyed, instead place it to cache and use it later for new sessions repeatedly. This should reduce kernel-level interface creation/deletion rate lack.
+  Specifies number of interfaces to keep in cache. It means that don't destroy interface after corresponding session is destroyed, instead place it to cache and use it later for new sessions repeatedly. This should reduce kernel-level interface creation/deletion rate lack.
 
 **unit-preallocate=0|1**
   By default is ``unit-preallocate=0``, ppp unit (interface) will allocate after authorization.

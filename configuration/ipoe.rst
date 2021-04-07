@@ -2,8 +2,8 @@
 
 [ipoe]
 ----
-Methot authenication users, control sessions and dilivery without any tunnel "called" as IPoE (IP over Ethernet).
-Accel-ppp support L2 and L3 topologies and start sessions on DHCP Discover or unclacified packet.
+Method authentication users, control sessions and delivery without any tunnel "called" as IPoE (IP over Ethernet).
+Accel-ppp support L2 and L3 topologies and start sessions on DHCP Discover or unclassified packet.
 
 Develop auxiliary kernel module for sessions start on unclassified packet and shared interfaces.
 This module creates virtual interface, an analogue of ifb and used for sessions shaper and One-to-one NAT.
@@ -31,7 +31,7 @@ Section IPoE contain many flexible customization.
 **mode=L2|L3**
     By default mode is L2.
     
-    Parameter specifies client connectivity mode. ``mode=L2`` then it means that clients are on same network where interfaceis. ``mode=L3`` means that client are behind some router.  Also may defined per-interface.
+    Parameter specifies client connectivity mode. ``mode=L2`` then it means that clients are on same network where interfaces. ``mode=L3`` means that client are behind some router.  Also may defined per-interface.
 
 **start=dhcpv4|up|auto**
     By default is not defined. Important to set this.
@@ -130,7 +130,7 @@ Section IPoE contain many flexible customization.
     Specifies ipv6 prefix delegation pool name which accel-ppp will use for allocate client ipv6 prefix delegation.
 
 **vlan-mon=[re:]name[,filter]**
-    vlan-mon needs for automatiicaly crate vlans interfaces, more often on vlan-per-user schemas. Support regular expression (**re:**). Parameter specifies list of vlans or ranges of vlans to monitor for and may be in following form: vlan-mon=eth1,2,5,10,20-30
+    vlan-mon needs for automatically crate vlans interfaces, more often on vlan-per-user schemas. Support regular expression (**re:**). Parameter specifies list of vlans or ranges of vlans to monitor for and may be in following form: vlan-mon=eth1,2,5,10,20-30
     
 **vlan-timeout=n**
     By default: ``vlan-timeout=60``.
@@ -141,7 +141,7 @@ Section IPoE contain many flexible customization.
     
     Specifies pattern of vlan interface name. Pattern may contain following macros:
     
-        ``%I`` - name of patern interface.
+        ``%I`` - name of pattern interface.
         
         ``%N`` - number of vlan.
         
@@ -162,7 +162,7 @@ Section IPoE contain many flexible customization.
 **proto=n**
     By default 3 - boot.
     
-    Specifies number of protocol to be used for inserted routes. Works only with ``ifcg=0``, when the routes create an accel-ppp, not a kernel. Also need exist gw ip address in the system on any of the interfaces, otherwise an error will be output to the accel-ppp.log
+    Specifies number of protocol to be used for inserted routes. Works only with ``ifcfg=0``, when the routes create an accel-ppp, not a kernel. Also need exist gw ip address in the system on any of the interfaces, otherwise an error will be output to the accel-ppp.log
 .. admonition:: Log output:
 
     debug: libnetlink: RTNETLINK answers: Invalid argument
@@ -173,7 +173,7 @@ Section IPoE contain many flexible customization.
     Terminate session when detects change of mac address of client.
 
 **soft-terminate=0|1**
-    By default is disabled: ``soft-terminat=0``
+    By default is disabled: ``soft-terminate=0``
 
     When terminating sessions through ``cli`` or ``Radius Disconnect-Message``, the session will not be terminated immediately, but will be marked as finished and client will continue working, but next time renew lease the session will be terminated. Session will terminate immediately when expired `max-lease-time`. For manually terminate session immediately you may use cli command ``accel-cmd terminate <session selector> hard``
 
@@ -220,7 +220,7 @@ Section IPoE contain many flexible customization.
 **attr-dhcp-client-ip=<attribute>**
     By default is not defined.
 
-    Specified radius attribute which contains ip address for asign to client. Example with existing attribute:
+    Specified radius attribute which contains ip address for assign to client. Example with existing attribute:
     
 .. code-block:: sh
 
@@ -233,7 +233,7 @@ Section IPoE contain many flexible customization.
 **attr-dhcp-router-ip=<attribute>**
     By default is not defined.
 
-    Specified radius attribute which contains router ip address for asign to client. Example with existing attribute:
+    Specified radius attribute which contains router ip address for assign to client. Example with existing attribute:
     
 .. code-block:: sh
 
@@ -246,7 +246,7 @@ Section IPoE contain many flexible customization.
 **attr-dhcp-mask=<attribute>**
     By default is not defined.
 
-    Specified radius attribute which contains netmask (CIDR) for asign to client. Example with existing attribute:
+    Specified radius attribute which contains netmask (CIDR) for assign to client. Example with existing attribute:
 
 .. code-block:: sh
 
@@ -341,7 +341,7 @@ Section IPoE contain many flexible customization.
     More modern load balancing mechanism based on weight.
     
     How it works:
-    On reception of DHCPDISCOVER accel-ppp sends broadcast DHCP message to port 67 with same xid and add special vendor-specific option where encodes its current session count multipled by weight. On reception of such message accel-ppp searches session with same xid and compares weight. If received weight is less than session's weight then it terminates this session.
+    On reception of DHCPDISCOVER accel-ppp sends broadcast DHCP message to port 67 with same xid and add special vendor-specific option where encodes its current session count multiplied by weight. On reception of such message accel-ppp searches session with same xid and compares weight. If received weight is less than session's weight then it terminates this session.
     May be used as per-interface.
 
 .. admonition:: Note:
@@ -365,7 +365,7 @@ Section IPoE contain many flexible customization.
     Specifies should accel-ppp create route for session with netmask /32. May be used as per-interface.
 
 **interface=[re:]name**
-    By default interface has many params which exaplain below.
+    By default interface has many params which explain below.
     
     Specifies interface to listen dhcp or unclassified packets. If name is prefixed with **re:** then name is treated as **regular expression**.
     
