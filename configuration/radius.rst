@@ -38,7 +38,7 @@
 **acct-interim-interval=n**
   By default is not defined.
 
-  Specifies interval in seconds to send accounting information (may be overriden by radius *Acct-Interim-Interval* attribute)
+  Specifies interval in seconds to send accounting information (may be overridden by radius *Acct-Interim-Interval* attribute)
 
 **acct-interim-jitter=n**
   By default is not defined.
@@ -63,7 +63,7 @@
 **sid-in-auth=0|1**
   By default is not defined. 
   
-  Specifies should *accel-ppp* generate and send ``Acct-Session-Id`` on Access-Request packet. By default ``Acct-Session-Id`` sended on Accounting-Request packet.
+  Specifies should *accel-ppp* generate and send ``Acct-Session-Id`` on Access-Request packet. By default ``Acct-Session-Id`` sent on Accounting-Request packet.
   
 **require-nas-identification=**
 
@@ -77,7 +77,7 @@
   Specifies IP address, port to bind and secret for Dynamic Authorization Extension server (DM/CoA).This *ip address* must exist on any server interface.
 
 **default-realm=realm**
-  By default is disabed.
+  By default is disabled.
 
   Append specified realm to username. For example ``default-realm=example.com`` accel-ppp send to RADIUS server ``username@example.com``
 

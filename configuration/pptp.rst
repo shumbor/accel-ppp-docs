@@ -50,7 +50,7 @@ Configuration overview of PPTP module.
 **ppp-max-mtu=n**
   By default ``ppp-max-mtu=1436``
 
-  Set the maximun MTU value that can be negociated for PPP over PPTP sessions.
+  Set the maximum MTU value that can be negociated for PPP over PPTP sessions.
 
 **ip-pool=pool_name**
   By default is not defined.

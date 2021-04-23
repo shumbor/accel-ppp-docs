@@ -103,7 +103,7 @@ Configuration of PPPoE module.
   Specifies ipv6 prefix delegation pool name which accel-ppp will use for allocate client ipv6 prefix delegation.
 
 **vlan-mon=[re:]name[,filter]**
-  vlan-mon needs for automatiicaly crate vlans interfaces. Support regular expression (re:). Parameter specifies list of vlans or ranges of vlans to monitor for and may be in following form: ``vlan-mon=eth1,2,5,10,20-30``
+  vlan-mon needs for automatically crate vlans interfaces. Support regular expression (re:). Parameter specifies list of vlans or ranges of vlans to monitor for and may be in following form: ``vlan-mon=eth1,2,5,10,20-30``
 
 **vlan-timeout=n**
   By default: ``vlan-timeout=60``.
@@ -115,7 +115,7 @@ Configuration of PPPoE module.
   
   Specifies pattern of vlan interface name. Pattern may contain following macros:
 
-* ``%I`` - name of patern interface.
+* ``%I`` - name of pattern interface.
 
 * ``%N`` - number of vlan.
 

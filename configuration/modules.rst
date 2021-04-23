@@ -1,7 +1,7 @@
 [modules]
 =========
 
-Section [modules] containes list of modules to load.
+Section [modules] contains list of modules to load.
 
 .. admonition:: Note:
 

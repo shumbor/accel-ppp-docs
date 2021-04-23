@@ -51,7 +51,7 @@ Overview ipv6 neighbor discovery section.
   The default value that should be placed in the Hop Count field of the IP header for outgoing (unicast) IP packets. The value should be set to the current diameter of the Internet.
   
 **AdvDefaultLifetime=n**
-  By deafault calculating 3 * **MaxRtrAdvInterval**
+  By default calculating 3 * **MaxRtrAdvInterval**
 
   The lifetime associated with the default router in units of seconds.
 

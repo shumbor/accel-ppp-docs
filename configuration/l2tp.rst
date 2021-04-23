@@ -41,7 +41,7 @@ Overview configuration of L2TP module.
 **rtimeout=n**
    By default ``timeout=1``
 
-  Specifies timeout (in seconds) to wait message acknowledge, if elapsed message retransmition will be performed. Timeout is multiplied by two after each retransmission. So if rtimeout is set to 1, first retransmission will occur after one second, second retransmission two seconds later, third one four seconds later, and so on, until a reply is received or the retransmit value is reached.
+  Specifies timeout (in seconds) to wait message acknowledge, if elapsed message retransmission will be performed. Timeout is multiplied by two after each retransmission. So if rtimeout is set to 1, first retransmission will occur after one second, second retransmission two seconds later, third one four seconds later, and so on, until a reply is received or the retransmit value is reached.
 
 **rtimeout-cap=n**
   By default ``rtimeout-cap=16``
@@ -94,7 +94,7 @@ Overview configuration of L2TP module.
 **ppp-max-mtu=n**
   By default ``ppp-max-mtu=1420``
 
-  Set the maximun MTU value that can be negociated for PPP over L2TP sessions.
+  Set the maximum MTU value that can be negotiated for PPP over L2TP sessions.
 
 **ifname=ifname**
   By default is not defined.
