@@ -124,6 +124,12 @@ Example for Mikrotik:
   By default is not defined.
 
   Specifies time ranges for automatic rate reconfiguration. You can specify multiple such options. Look examples below.
+  
+**rate-limit=downstream/upstream**
+  By default is not defined.
+
+  Specifies default speed if there are no radius attributes.
+  
 
 Examples
 --------
