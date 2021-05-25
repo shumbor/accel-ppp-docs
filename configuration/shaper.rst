@@ -128,7 +128,7 @@ Example for Mikrotik:
 **rate-limit=downstream/upstream**
   By default is not defined.
 
-  Specifies default speed if there are no radius attributes/
+  Specifies default speed if there are no radius attributes.
   
 
 Examples
